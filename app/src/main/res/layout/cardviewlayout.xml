@@ -12,46 +12,35 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/title"
+            android:id="@+id/place_title"
             android:layout_width="match_parent"
             android:layout_height="20dp"
-            android:background="@color/bkg_card"
-            android:text="contact det"
+            android:background="@android:color/darker_gray"
+            android:text="Place Title"
             android:gravity="center_vertical"
             android:textColor="@android:color/white"
             android:textSize="14dp"/>
 
         <TextView
-            android:id="@+id/txtName"
+            android:id="@+id/place_subtitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Name"
+            android:text="Other Info"
             android:gravity="center_vertical"
             android:textSize="10dp"
-            android:layout_below="@id/title"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="5dp"/>
+            android:layout_marginLeft="5dp"
+            android:layout_below="@id/place_title" />
 
         <TextView
-            android:id="@+id/txtSurname"
+            android:id="@+id/place_tags"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Surname"
-            android:gravity="center_vertical"
-            android:textSize="10dp"
-            android:layout_below="@id/txtName"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="5dp"/>
-
-        <TextView
-            android:id="@+id/txtEmail"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Email"
+            android:text="tags go here"
             android:textSize="10dp"
             android:layout_marginTop="10dp"
             android:layout_alignParentRight="true"
             android:layout_marginRight="150dp"
-            android:layout_alignBaseline="@id/txtName"/>
+            android:layout_alignBaseline="@id/place_subtitle"/>
 
     </RelativeLayout>
+    </android.support.v7.widget.CardView>
