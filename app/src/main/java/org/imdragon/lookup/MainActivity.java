@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mRecyclerView = (RecyclerView) findViewById(R.id.cardsList);
-//        mRecyclerView.setHasFixedSize(true);
+        mRecyclerView.setHasFixedSize(true);
         LinearLayoutManager mLayoutManager = new LinearLayoutManager(this);
         mLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         mRecyclerView.setLayoutManager(mLayoutManager);
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setAdapter (){
-        RAdapter mAdapter = new RAdapter(places);
+        RAdapter mAdapter = new RAdapter(this, places);
         mRecyclerView.setAdapter(mAdapter);
     }
 }
