@@ -5,18 +5,36 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
+    private List<Place> places;
+    private RecyclerView mRecyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        RecyclerView mRecyclerView = (RecyclerView) findViewById(R.id.cardsList);
+        mRecyclerView = (RecyclerView) findViewById(R.id.cardsList);
         mRecyclerView.setHasFixedSize(true);
         LinearLayoutManager mLayoutManager = new LinearLayoutManager(this);
         mLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         mRecyclerView.setLayoutManager(mLayoutManager);
 
     }
+
+    private void setup() {
+        places = new ArrayList<>();
+        places.add(new Place("Santa Barbara Beach", "beach, awesome, romantic", ""));
+        places.add(new Place("SB Courthouse", "downtown, historic, tourist", ""));
+        places.add(new Place("Tunnel Trail", "hiking, healthy, photos", ""));
+    }
+
+    private void setAdapter (){
+        RAdapter mAdapter = new RAdapter(places);
+        mRecyclerView.setAdapter(mAdapter);
+    }
 }
+
