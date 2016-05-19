@@ -6,11 +6,11 @@ import java.util.ArrayList;
 public class Place {
     String title;
     String tags;
-    String photos;
+    int photos;
 
     // TODO: 5/18/2016 Later look into allowing multiple tags and photos in constructor
 //    Place(String title, ArrayList<String> tags, ArrayList<String> photos) {
-    Place(String title, String tags, String photos) {
+    Place(String title, String tags, int photos) {
         this.title = title;
         this.tags = tags;
         this.photos = photos;

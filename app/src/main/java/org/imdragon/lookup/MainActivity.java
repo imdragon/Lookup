@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mRecyclerView = (RecyclerView) findViewById(R.id.cardsList);
-        mRecyclerView.setHasFixedSize(true);
+//        mRecyclerView.setHasFixedSize(true);
         LinearLayoutManager mLayoutManager = new LinearLayoutManager(this);
         mLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         mRecyclerView.setLayoutManager(mLayoutManager);
@@ -29,9 +29,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void setup() {
         places = new ArrayList<>();
-        places.add(new Place("Santa Barbara Beach", "beach, awesome, romantic", ""));
-        places.add(new Place("SB Courthouse", "downtown, historic, tourist", ""));
-        places.add(new Place("Tunnel Trail", "hiking, healthy, photos", ""));
+        places.add(new Place("Santa Barbara Beach", "beach, awesome, romantic", R.drawable.sbbeach));
+        places.add(new Place("SB Courthouse", "downtown, historic, tourist", R.drawable.courthouse));
+        places.add(new Place("Tunnel Trail", "hiking, healthy, photos", R.drawable.tunneltrail));
     }
 
     private void setAdapter (){

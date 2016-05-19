@@ -56,6 +56,7 @@ public class RAdapter extends RecyclerView.Adapter<RAdapter.PlaceViewHolder> {
     public void onBindViewHolder(PlaceViewHolder holder, int position) {
         holder.placeTitle.setText(places.get(position).title);
         holder.placeTags.setText(places.get(position).tags);
+        holder.placePhoto.setImageResource(places.get(position).photos);
     }
 
 
