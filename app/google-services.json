@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "715388696909",
+    "firebase_url": "https://lookup-2a948.firebaseio.com",
+    "project_id": "lookup-2a948",
+    "storage_bucket": "lookup-2a948.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:715388696909:android:a95531bc898e5dfc",
+        "android_client_info": {
+          "package_name": "org.imdragon.lookup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "715388696909-nidi094j66b9a0al8ov0kmm6lq6na39g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQZ_3_7K09TID4_LZ5lbI98lXCjWp66mQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

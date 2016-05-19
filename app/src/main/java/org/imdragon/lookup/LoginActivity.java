@@ -19,7 +19,8 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void register(View v){
-        Toast.makeText(LoginActivity.this, "This will send a registration request", Toast.LENGTH_SHORT).show();
+        startActivity(new Intent(this, MapsActivity.class));
+//        Toast.makeText(LoginActivity.this, "This will send a registration request", Toast.LENGTH_SHORT).show();
     }
 
 }
